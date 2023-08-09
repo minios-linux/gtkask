@@ -1,19 +1,12 @@
-# GTKdialog
-Simple GTK2 dialog for Yes/No questions
+# gtkdialog-slax
+Adapting the gtkdialog source code to build a package for use in MiniOS Flux (a Slax clone from the MiniOS team).
 
-    Usage:
-      gtkdialog [OPTION...]
+# building
+```sh
+git clone https://github.com/minios-linux/gtkdialog-slax.git
+mv xlunch-slax gtkdialog-slax-1.0
+cd gtkdialog-slax-1.0
+dh_make --createorig -s -y
+dpkg-buildpackage -rfakeroot -uc -us
+```
 
-    Help Options:
-      -h, --help                Show help options
-
-    Application Options:
-      -i, --icon=icon file      Dialog icon
-      -t, --title=title         Dialog title
-      -m, --message=message     Dialog message
-      -y, --yes=Yes             Text to display on Yes button
-      -n, --no=No               Text to display on No button
-
-    Exit status:
-
-       exit status is 0 for pressing Yes, 1 for pressing No

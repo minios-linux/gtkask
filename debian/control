@@ -1,0 +1,14 @@
+Source: gtkdialog-slax
+Section: unknown
+Priority: optional
+Maintainer: crims0n <crims0n@minios.dev>
+Build-Depends: debhelper-compat (= 13), libgtk2.0-dev
+Standards-Version: 4.5.1
+Homepage: https://github.com/minios-linux/gtkdialog-slax.git
+Rules-Requires-Root: no
+
+Package: gtkdialog-slax
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: gtkdialog
+Description: Simple GTK2 dialog for Yes/No questions.
