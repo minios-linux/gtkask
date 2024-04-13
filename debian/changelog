@@ -1,3 +1,10 @@
+gtkask (1.0-2) unstable; urgency=medium
+
+  * Changed program and package name for compatibility
+    with gtkdialog <https://code.google.com/archive/p/gtkdialog>
+
+ -- crims0n <crims0n@minios.dev>  Sat, 13 Apr 2024 18:10:29 +0300
+
 gtkdialog-slax (1.0-1) unstable; urgency=medium
 
   * Initial release
